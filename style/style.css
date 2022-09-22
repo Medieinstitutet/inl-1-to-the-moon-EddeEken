@@ -1,0 +1,689 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+@import url(https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap);
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/* ------------------------------------------------ */
+/* ------------------------ FONTS ----------------- */
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+/* ------------------------ LAYOUT ---------------- */
+/* ------------------------------------------------ */
+.full-height {
+  min-height: 100vh;
+}
+
+.astronaut {
+  background-color: whitesmoke;
+}
+
+/* ------------------------------------------------ */
+/* ------------------------ BUTTON ---------------- */
+/* ------------------------------------------------ */
+button {
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  top: 25px;
+  right: 25px;
+  position: fixed;
+  z-index: 2;
+  pointer-events: none;
+}
+
+button span {
+  width: 35px;
+  height: 5px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  display: block;
+  background-color: black;
+  position: relative;
+  right: 0;
+  transition: all 0.35s ease-in-out;
+}
+
+input {
+  position: fixed;
+  top: 25px;
+  right: 23px;
+  z-index: 1;
+  width: 35px;
+  height: 35px;
+  opacity: 0;
+}
+
+/* ------------------------------------------------ */
+/* --------------- BUTTON ANIMATIONS -------------- */
+/* ------------------------------------------------ */
+button span:nth-child(2) {
+  right: 4px;
+}
+
+button:hover span:nth-child(2) {
+  right: 0px;
+}
+
+input:checked + .menu button span {
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+}
+
+input:checked + .menu button span:nth-child(2) {
+  opacity: 0;
+}
+
+input:checked + .menu button span:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+input:checked + .menu button span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: whitesmoke;
+  opacity: 0;
+  transition: all 0, 7s cubic-bezier(0.075, 0.82, 0.165, 1);
+  width: 100vw;
+  height: 100vh;
+  visibility: hidden;
+}
+
+input:checked + .menu nav {
+  visibility: visible;
+  display: block;
+  opacity: 70%;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+li {
+  text-transform: uppercase;
+  font-family: "rubik";
+  font-size: 3rem;
+  text-shadow: 3px 3px 6px black;
+  border-width: 10px;
+  cursor: pointer;
+  color: black;
+}
+
+li:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-color: #de466c;
+          text-decoration-color: #de466c;
+  text-decoration-thickness: 6px;
+  border-radius: 10px;
+}
+
+/* ------------------------------------------------ */
+/* ------------------------ ASTRONAUT ------------- */
+/* ------------------------------------------------ */
+.astronaut {
+  background-image: url("../adam-miller-unsplash.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.astronaut .heading-box {
+  border: 4px solid black;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  width: 9rem;
+  top: 60px;
+  left: 50px;
+  padding: 15px;
+  font-family: "Rubik";
+}
+
+.astronaut .heading-box .text {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+/* ------------------------------------------------ */
+/* ------------------------ DESKTOP --------------- */
+/* ------------------------------------------------ */
+@media screen and (min-width: 800px) {
+  .astronaut .heading-box {
+    width: 15rem;
+  }
+  .astronaut .heading-box .link {
+    text-align: right;
+    cursor: pointer;
+  }
+  .astronaut .heading-box .link span {
+    position: relative;
+    left: 0px;
+    transition: left 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+    cursor: pointer;
+  }
+  .astronaut .heading-box .link:hover span {
+    left: 6px;
+  }
+}
+/* ------------------------------------------------ */
+/* ------------------------ DARK MODE ------------- */
+/* ------------------------------------------------ */
+@media (prefers-color-scheme: dark) {
+  .astronaut .text-page {
+    background-color: black;
+  }
+}
+/* ------------------------------------------------ */
+/* ------------------WHITE ARROW MOBILE-------------*/
+/* ------------------------------------------------ */
+.astronaut .arrow-down {
+  color: white;
+  position: absolute;
+  right: 50%;
+  bottom: 10px;
+  font-size: 40px;
+}
+
+@media screen and (min-width: 800px) {
+  .arrow-down {
+    visibility: hidden;
+  }
+}
+/* ------------------------------------------------ */
+/* ------------------------ TEXT-PAGE ------------- */
+/* ------------------------------------------------ */
+.textPage {
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../stars.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  font-family: "Rubik", sans-serif;
+}
+
+.textPage .wrapper {
+  display: block;
+  position: relative;
+}
+
+.textPage .columns {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 70px;
+}
+
+.textPage .spaceVentures {
+  margin: auto;
+  width: 90%;
+  padding: 10px;
+  font-size: 800%;
+  height: 200px;
+  text-shadow: 2px 2px 10px #000000;
+}
+
+.textPage .space {
+  font-weight: 600;
+  font-size: 85px;
+  position: relative;
+  z-index: 10;
+}
+
+.textPage .ventures {
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+  font-size: 105px;
+  opacity: 0.7;
+  position: relative;
+  left: 78px;
+  bottom: 105px;
+}
+
+.textPage .titleTextPage {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 15px 5px;
+}
+
+.textPage .textStyle {
+  line-height: 1.6;
+  margin: 6px 0;
+  font-weight: 400;
+  font-size: 0.93rem;
+}
+
+.textPage .quotes {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.textPage .quoteA {
+  font-size: 2.5rem;
+  line-height: 1.3;
+  position: relative;
+  left: 75px;
+  margin: 30px 0;
+}
+
+.textPage .gradient .quoteB {
+  display: none;
+}
+
+.insertLineBreak::before {
+  content: "\a";
+  white-space: pre;
+}
+
+.textPage .pinkText {
+  font-size: 0.85rem;
+  color: #D200A2;
+}
+
+.textPage .linkUnderline {
+  text-decoration: underline;
+}
+
+.arrow {
+  font-size: 1.5rem;
+}
+
+/* ------------------------------------------------ */
+/* ------------------------ FOOTER ---------------- */
+/* ------------------------------------------------ */
+footer {
+  background-color: #000E1B;
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer section {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ------------------------------------------------ */
+/* ------------------------ DESKTOP --------------- */
+/* ------------------------------------------------ */
+@media screen and (min-width: 800px) {
+  .textPage .wrapper {
+    display: flex;
+  }
+  .textPage .columns {
+    padding: 55px 90px;
+  }
+  .textPage .spaceVentures {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 100px;
+  }
+  .textPage .space {
+    font-size: 7rem;
+  }
+  .textPage .ventures {
+    font-size: 9rem;
+    left: 5px;
+    bottom: 85px;
+  }
+  .textPage .textStyle pinkText {
+    padding: 0 20px;
+  }
+  .textPage .textStyle {
+    font-size: 1rem;
+  }
+  .textStyle::after {
+    clear: both;
+  }
+  .textPage .gradient .quoteB {
+    display: block;
+    font-size: 2.7rem;
+    line-height: 1.2;
+    font-weight: 300;
+    background-image: linear-gradient(to bottom right, #D200A2, white, #D200A2);
+    color: #de466c;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    opacity: 0.4;
+    padding: 40px 0;
+    width: 400px;
+  }
+  .majorTom {
+    background-image: url("../major_tom.jpg");
+    background-size: 85px 135px;
+    width: 85px;
+    height: 135px;
+    display: block;
+    transform: rotate(4deg);
+    float: right;
+    margin: 3px;
+    padding: 4px;
+  }
+  .insertLineBreak::before {
+    content: none;
+  }
+}/*# sourceMappingURL=style.css.map */

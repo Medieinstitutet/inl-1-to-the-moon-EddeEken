@@ -1,0 +1,165 @@
+/* ------------------------------------------------ */
+/* ------------------------ TEXT-PAGE ------------- */
+/* ------------------------------------------------ */
+
+.textPage{
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../stars.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    font-family: 'Rubik', sans-serif;
+}
+.textPage .wrapper{
+    display: block;
+    position: relative;
+}
+.textPage .columns{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 70px;
+}
+.textPage .spaceVentures{
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+    font-size: 800%;
+    height: 200px;
+    text-shadow: 2px 2px 10px #000000;
+}
+.textPage .space{
+    font-weight: 600;
+    font-size: 85px;
+    position: relative;
+    z-index: 10
+}
+.textPage .ventures{
+    font-family: "Times New Roman", serif;
+    font-weight: bold;
+    font-size: 105px;
+    opacity: 0.7;
+    position: relative;
+    left: 78px;
+    bottom: 105px;
+}
+.textPage .titleTextPage{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 15px 5px;
+}
+.textPage .textStyle{
+    line-height: 1.6;
+    margin: 6px 0;
+    font-weight: 400;
+    font-size: 0.93rem;
+}
+.textPage .quotes{
+    font-style: italic;
+    font-weight: 400;
+}
+.textPage .quoteA{
+    font-size: 2.5rem;
+    line-height: 1.3;
+    position: relative;
+    left: 75px;
+    margin: 30px 0;
+}
+.textPage .gradient .quoteB{
+    display: none;
+}
+.insertLineBreak::before{
+    content: "\a";
+    white-space: pre;
+}
+.textPage .pinkText{
+    font-size: 0.85rem;
+    color: #D200A2;
+}
+.textPage .linkUnderline{
+    text-decoration: underline;
+}
+.arrow{
+    font-size: 1.5rem;
+}
+
+/* ------------------------------------------------ */
+/* ------------------------ FOOTER ---------------- */
+/* ------------------------------------------------ */
+
+footer{
+    background-color: #000E1B;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+footer section{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ------------------------------------------------ */
+/* ------------------------ DESKTOP --------------- */
+/* ------------------------------------------------ */
+
+@media screen and (min-width:800px){
+    .textPage .wrapper{
+            display: flex;
+    }
+    .textPage .columns{
+            padding: 55px 90px;
+    }
+    .textPage .spaceVentures{
+            margin: 0;
+            padding: 0;
+            margin-bottom: 100px;
+    }
+    .textPage .space{
+            font-size: 7rem;
+    }
+    .textPage .ventures{
+            font-size: 9rem;
+            left: 5px;
+            bottom: 85px;
+    }
+    .textPage .textStyle pinkText{
+            padding: 0 20px;
+    }
+    .textPage .textStyle{
+            font-size: 1rem;
+    }
+    .textStyle::after{
+            clear: both;
+    }
+    .textPage .gradient .quoteB{
+            display: block;
+            font-size: 2.7rem;
+            line-height: 1.2;
+            font-weight: 300;
+            background-image: linear-gradient(to bottom right, #D200A2, white, #D200A2);
+            color: #de466c;
+            -webkit-background-clip:text;
+            -webkit-text-fill-color:transparent;
+            background-clip: text;
+            opacity: 0.4;
+            padding: 40px 0;
+            width: 400px;
+    }
+    .majorTom{
+            background-image: url('../major_tom.jpg');
+            background-size: 85px 135px;
+            width: 85px;
+            height: 135px;
+            display: block;
+            transform: rotate(4deg);
+            float: right;
+            margin: 3px;
+            padding: 4px;
+    }
+    .insertLineBreak::before{
+    content: none;
+    }
+}
