@@ -331,7 +331,6 @@ button {
   height: 35px;
   background-color: transparent;
   border: 0;
-  cursor: pointer;
   top: 25px;
   right: 25px;
   position: fixed;
@@ -347,7 +346,7 @@ button span {
   display: block;
   background-color: black;
   position: relative;
-  right: 0;
+  left: 0;
   transition: all 0.35s ease-in-out;
 }
 
@@ -359,17 +358,14 @@ input {
   width: 35px;
   height: 35px;
   opacity: 0;
+  cursor: pointer;
 }
 
 /* ------------------------------------------------ */
 /* --------------- BUTTON ANIMATIONS -------------- */
 /* ------------------------------------------------ */
-button span:nth-child(2) {
-  right: 4px;
-}
-
-button:hover span:nth-child(2) {
-  right: 0px;
+input:hover + .menu button span:nth-child(2) {
+  left: -4px;
 }
 
 input:checked + .menu button span {
@@ -431,8 +427,8 @@ li {
 li:hover {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-  -webkit-text-decoration-color: #de466c;
-          text-decoration-color: #de466c;
+  -webkit-text-decoration-color: hsl(345deg, 70%, 57%);
+          text-decoration-color: hsl(345deg, 70%, 57%);
   text-decoration-thickness: 6px;
   border-radius: 10px;
 }
@@ -606,6 +602,10 @@ li:hover {
   font-size: 1.5rem;
 }
 
+.textPage .majorTom {
+  display: none;
+}
+
 /* ------------------------------------------------ */
 /* ------------------------ FOOTER ---------------- */
 /* ------------------------------------------------ */
@@ -629,12 +629,12 @@ footer section {
 /* ------------------------------------------------ */
 /* ------------------------ DESKTOP --------------- */
 /* ------------------------------------------------ */
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1200px) {
   .textPage .wrapper {
     display: flex;
   }
   .textPage .columns {
-    padding: 55px 90px;
+    padding: 50px 60px;
   }
   .textPage .spaceVentures {
     margin: 0;
@@ -672,9 +672,7 @@ footer section {
     padding: 40px 0;
     width: 400px;
   }
-  .majorTom {
-    background-image: url("../major_tom.jpg");
-    background-size: 85px 135px;
+  .textPage .majorTom {
     width: 85px;
     height: 135px;
     display: block;
@@ -682,8 +680,38 @@ footer section {
     float: right;
     margin: 3px;
     padding: 4px;
+    display: block;
   }
   .insertLineBreak::before {
     content: none;
   }
+}
+/* ------------------------------------------------ */
+/* ------------------------ COOKIES --------------- */
+/* ------------------------------------------------ */
+.cookies {
+  position: fixed;
+  bottom: 0%;
+  right: 0%;
+  width: 100%;
+  height: 20px;
+  display: flex;
+  background-color: rgb(1, 1, 95);
+}
+
+.cookies .textCookies {
+  position: relative;
+  float: left;
+  font-family: "rubik";
+  font-size: 1rem;
+  color: #D200A2;
+}
+
+.cookies .buttonCookies {
+  text-transform: uppercase;
+  position: relative;
+  float: right;
+  width: 15px;
+  height: 5px;
+  background-color: rgb(2, 2, 165);
 }/*# sourceMappingURL=style.css.map */

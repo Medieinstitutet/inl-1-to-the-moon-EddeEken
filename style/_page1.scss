@@ -25,7 +25,6 @@ button {
     height: 35px;
     background-color: transparent;
     border: 0;
-    cursor: pointer;
     top: 25px;
     right: 25px;
     position: fixed;
@@ -40,7 +39,7 @@ button span {
     display: block;
     background-color: black;
     position: relative;
-    right: 0;
+    left: 0;
     transition: all 0.35s ease-in-out;
 }
 input {
@@ -51,18 +50,17 @@ input {
     width: 35px;
     height: 35px;
     opacity: 0;
+    cursor: pointer;
 }
 
 /* ------------------------------------------------ */
 /* --------------- BUTTON ANIMATIONS -------------- */
 /* ------------------------------------------------ */
 
-button span:nth-child(2) {
-    right: 4px;
+input:hover + .menu button span:nth-child(2) {
+    left: -4px;
 }
-button:hover span:nth-child(2) {
-    right:0px;
-}
+
 input:checked + .menu button span {
     position: absolute;
     transition: all 0.3s ease-in-out;
@@ -113,7 +111,7 @@ li {
 }
 li:hover { 
     text-decoration-line: underline;
-    text-decoration-color: #de466c;
+    text-decoration-color: hsl(345, 70%, 57%);
     text-decoration-thickness: 6px;
     border-radius: 10px;
 }
