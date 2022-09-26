@@ -104,16 +104,17 @@ li {
     text-transform: uppercase;
     font-family: 'rubik';
     font-size: 3rem;
-    text-shadow: 3px 3px 6px black;
+    text-shadow: 0px 5px rgba(0, 0, 0, 0.3);
     border-width: 10px;
     cursor: pointer;
     color: black;
+    font-weight: bold;
 }
 li:hover { 
     text-decoration-line: underline;
     text-decoration-color: hsl(345, 70%, 57%);
     text-decoration-thickness: 6px;
-    border-radius: 10px;
+    border-radius: 4;
 }
 
 /* ------------------------------------------------ */
@@ -136,10 +137,11 @@ li:hover {
     font-family: 'Rubik';
 }
 .astronaut .heading-box .text {
+    font-weight: bold;
     text-align: center;
     text-transform: uppercase;
     font-size: 3rem;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 30px;
 }
 
@@ -150,6 +152,9 @@ li:hover {
 @media screen and (min-width: 800px) {
     .astronaut .heading-box {
         width: 15rem;
+    }
+    .astronaut .heading-box .text {
+        font-size: 4rem;
     }
     .astronaut .heading-box .link {
         text-align: right;
@@ -181,11 +186,11 @@ li:hover {
 /* ------------------------------------------------ */
 
 .astronaut .arrow-down {
-color: white;
-position: absolute;
-right: 50%;
-bottom: 10px;
-font-size: 40px;
+    color: white;
+    position: absolute;
+    right: 50%;
+    bottom: 10px;
+    font-size: 40px;
 }
 @media screen and (min-width: 800px) {
     .arrow-down {
