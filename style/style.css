@@ -592,7 +592,8 @@ li:hover {
 
 .textPage .pinkText {
   font-size: 0.85rem;
-  color: #D200A2;
+  color: #d42b6f;
+  cursor: pointer;
 }
 
 .textPage .linkUnderline {
@@ -601,6 +602,7 @@ li:hover {
 
 .arrow {
   font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .textPage .majorTom {
@@ -610,6 +612,21 @@ li:hover {
 /* ------------------------------------------------ */
 /* ------------------------ FOOTER ---------------- */
 /* ------------------------------------------------ */
+footer {
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer section {
+  display: flex;
+  justify-content: space-between;
+}
+
 .cookies {
   box-sizing: border-box;
   position: fixed;
@@ -629,7 +646,7 @@ li:hover {
   margin-right: 20px;
   font-family: "rubik";
   font-size: 0.8rem;
-  color: #D200A2;
+  color: #dd297d;
 }
 
 .cookies .buttonCookies {
@@ -641,26 +658,6 @@ li:hover {
   text-transform: uppercase;
   font-weight: bold;
   color: #fff;
-}
-
-/* ------------------------------------------------ */
-/* ------------------------ FOOTER ---------------- */
-/* ------------------------------------------------ */
-footer {
-  background-color: #000E1B;
-  color: #fff;
-  padding: 20px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 40px;
-  display: flex;
-  justify-content: space-between;
-}
-
-footer section {
-  display: flex;
-  justify-content: space-between;
 }
 
 /* ------------------------------------------------ */
@@ -726,6 +723,6 @@ footer section {
     content: none;
   }
   .cookies .textCookies {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */
