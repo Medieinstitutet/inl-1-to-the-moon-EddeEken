@@ -612,7 +612,7 @@ blockquote::before {
 blockquote::after {
   content: "”";
   bottom: -2rem;
-  left: 6rem;
+  left: 6.2rem;
 }
 
 .textPage .gradient .quoteB {
@@ -673,6 +673,7 @@ footer section {
   align-items: center;
   padding: 20px 2%;
   background-color: #001222;
+  z-index: 11;
 }
 
 .cookies .textCookies {
