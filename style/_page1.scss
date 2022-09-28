@@ -21,7 +21,7 @@ button {
     top: 25px;
     right: 25px;
     position: fixed;
-    z-index: 2;
+    z-index: 4;
     pointer-events: none;
 }
 button span {
@@ -39,7 +39,7 @@ input {
     position: fixed;
     top: 25px;
     right: 23px;
-    z-index: 1;
+    z-index: 3;
     width: 35px;
     height: 35px;
     opacity: 0;
@@ -73,7 +73,7 @@ nav {
     left:0;
     background-color: whitesmoke;
     opacity: 0;
-    transition: all 0,7s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
     width: 100vw;
     height: 100vh;
     visibility: hidden;
@@ -82,6 +82,7 @@ input:checked + .menu nav {
     visibility: visible;
     display: block; 
     opacity: 70%;
+    z-index: 2;
 }
 ul {
     padding: 0;
