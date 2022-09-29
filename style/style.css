@@ -542,7 +542,7 @@ li:hover {
 
 .textPage .space {
   font-weight: 600;
-  font-size: 55px;
+  font-size: 4rem;
   position: relative;
   z-index: 1;
 }
@@ -550,7 +550,7 @@ li:hover {
 .textPage .ventures {
   font-family: "Times New Roman", serif;
   font-weight: bold;
-  font-size: 70px;
+  font-size: 5rem;
   opacity: 0.7;
   position: relative;
   left: 78px;
@@ -674,7 +674,7 @@ footer section {
   align-items: center;
   padding: 20px 2%;
   background-color: #001222;
-  z-index: 11;
+  z-index: 5;
 }
 
 .cookies .textCookies {
